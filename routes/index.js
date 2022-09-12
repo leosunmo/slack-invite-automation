@@ -61,9 +61,9 @@ router.post('/invite', function(req, res) {
     }
     if (!!config.recaptchaSiteKey && !!config.recaptchaSecretKey) {
       request.post({
-        url: 'https://www.google.com/recaptcha/api/siteverify',
+        url: 'https://hcaptcha.com/siteverify',
         form: {
-          response: req.body['g-recaptcha-response'],
+          response: req.body['h-captcha-response'],
           secret: config.recaptchaSecretKey
         }
       }, function(err, httpResponse, body) {

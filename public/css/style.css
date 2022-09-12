@@ -159,6 +159,6 @@ a:hover {
   color: #7EB6FF;
 }
 
-.g-recaptcha, .g-recaptcha > div {
+.h-captcha, .h-captcha > div {
   margin: auto;
 }
